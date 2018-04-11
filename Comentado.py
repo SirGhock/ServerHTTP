@@ -1,7 +1,7 @@
 		######################################################################
 		#    Trabalho desenvolvido na disciplina de Redes de Computadores    #
 		#               Pelos alunos: João Fernando                          #
-		#                             Matheus Saggioro                       #
+		#                             Mateus Saggioro                        #
 		#                             Luiz Arruda                            #
 		#                                                                    # 
 		#    Proposta: Desenvolver um servidor HTTP com a linguagem python   #
@@ -13,7 +13,7 @@ HOST,PORT = '192.168.100.4',8080                                # Define o IP do
 meu_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)   # Cria o socket do servidor
 meu_socket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)  # Faz com que ao fechar o servidor por exemplo, não de o erro do host e a port ja estarem sendo usados
 meu_socket.bind((HOST,PORT))                                    # Define para qual porta e ip o servidor ira estabelecer a conexão
-meu_socket.listen(1)                                            # Estabelece o limente de conexões
+meu_socket.listen(1)                                            # Estabelece o limite de conexões
 print('Servidor rodando no IP:',HOST, 'e na PORTA:',PORT)
 
 while True:
