@@ -22,7 +22,7 @@ while True:
     arquivo = requesting_file.split('?')[0] 
     arquivo = arquivo.lstrip('/')    
     if(arquivo == ''):                
-        arquivo = 'www/index.html'    
+        arquivo = 'index.html'    
 
     try:
         pagina = open(arquivo,'rb')         
