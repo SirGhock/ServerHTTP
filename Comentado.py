@@ -38,15 +38,9 @@ while True:
         pagina = open(arquivo,'rb')        	# Abre o arquivo HTML , 'r' de read , 'b' de byte format
         response = pagina.read()            	# Faz a leitura do arquivo
         pagina.close()                      	# Após salvo o valor, pode fechar a leitura do arquivo
-        header = 'HTTP/1.1 200 OK\n'        	# Cabeçalho de sucesso 
-        if(arquivo.endswith(".jpg")):       	# Se o final do nome do arquivo terminar com .jpg
-            mimetype = 'image/jpg'
-        elif(arquivo.endswith(".css")):     	# Se o final do nome do arquivo terminar com .css
-            mimetype = 'text/css'	
-        else:
-            mimetype = 'text/html'         	# Se não ele será text ou html
-        header += 'Content-Type: '+str(mimetype)+'\n\n' # Atribui ao campo 'Content-Type' o tipo do arquivo
-
+        header = 'HTTP/1.1 200 OK\n'        	# Cabeçalho de sucesso
+        header += 'Content-Type: '+str('text/html')+'\n\n' # Atribui ao campo 'Content-Type' o tipo do arquivo(text/html)
+	
     except Exception as e:                  	# Caso ele nao encontre o arquivo requisitado dentro do try, ele abre a exceção
         header = 'HTTP/1.1 404 Not Found\n\n'	# Cabeçalho de falha ao encontrar o arquivo
         response = '<html><body><center><h3>Error 404: File not found</h3><p>Servidor Python HTTP</p></center></body></html>'.encode('utf-8')                       # Transforma um texto em html com encode e envia como resposta o erro
