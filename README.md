@@ -9,7 +9,7 @@ Para executar o programa é nescessário ter instalado em sua márina um compila
 
 Configurar o HOST e o PORT desejado no arquivo 'Server.py'
 
-A página que deseja enviar deve estar dentro de um diretório com o nome "www" e a página principal com o nome "index.html"
+A página que deseja enviar deve estar dentro do mesmo diretório do servidor e a página principal com o nome "index.html"
 
 Para compilar basta salvar todas as alterações e e abrir o arquivo 'Server.py' em um compilador de python
 
