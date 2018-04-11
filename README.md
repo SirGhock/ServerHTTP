@@ -15,3 +15,13 @@ Para compilar basta salvar todas as alterações e e abrir o arquivo 'Server.py'
 
 O servidor está rodando, basta acessar através de um navegador em um computador na mesma rede em que o servidor está rodando, com o link www.SEU_IP:SUA_PORTA
 
+#### Referencias utilizadas para auxílio
+
+https://www.vivaolinux.com.br/artigo/Sockets-em-Python
+
+https://docs.python.org/3/howto/sockets.html
+
+https://docs.python.org/2.2/lib/module-socket.html
+
+https://docs.python.org/3/library/http.html
+
