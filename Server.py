@@ -10,15 +10,12 @@ print('Servidor rodando no IP:',HOST, 'e na PORTA:',PORT)
 while True:
     clienteConec, address = meu_socket.accept()
     request = clienteConec.recv(1024).decode('utf-8')
-    string_list = request.split(' ')     
-    method = string_list[0]             
-    requesting_file = string_list[1]     
+    requesting_file = request.split(' ')[1]     
 
     print('Endereço do Cliente: ',address)
     print('O Cliente requisitou:',requesting_file)
     print('Requisicao:',request)
-
-
+    
     arquivo = requesting_file.split('?')[0] 
     arquivo = arquivo.lstrip('/')    
     if(arquivo == ''):                
