@@ -20,7 +20,6 @@ while True:
     clienteConec, address = meu_socket.accept() # Retorna duas variaveis, uma com informações da conexão do cliente com o servidor e a segunda retorna somente o ip e a porta do cliente (O servidor fica esperando uma conexão)
     request = clienteConec.recv(1024).decode('utf-8')
     string_list = request.split(' ')    	# Corta os a requisição pelos espaçoes em branco separando em um vetor
-    method = string_list[0]              	# Passa o método da requisição, que está na posição 0 do vetor
     requesting_file = string_list[1]     	# Passa o arquivo requisitado que está na posição zero do vetor
 
 ### Informações importantes para o servidor ###
