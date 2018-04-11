@@ -28,15 +28,8 @@ while True:
         pagina = open(arquivo,'rb')         
         response = pagina.read()            
         pagina.close()                      
-        header = 'HTTP/1.1 200 OK\n'       
-        if(arquivo.endswith(".jpg")):       
-            mimetype = 'image/jpg'
-        elif(arquivo.endswith(".css")):    
-            mimetype = 'text/css'
-        else:
-            mimetype = 'text/html'         
-        header += 'Content-Type: '+str(mimetype)+'\n\n' 
-
+        header = 'HTTP/1.1 200 OK\n'               
+        header += 'Content-Type: '+str('text/html')+'\n\n'
     except Exception as e:          
         header = 'HTTP/1.1 404 Not Found\n\n'
         response = '<html><body><center><h3>Error 404: File not found</h3><p>Servidor Python HTTP</p></center></body></html>'.encode('utf-8')
