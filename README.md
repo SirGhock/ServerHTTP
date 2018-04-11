@@ -1,5 +1,9 @@
 # ServerHTTP
 Trabalho realizado na disciplina de Redes de Computadores
+##### Arquivos:
+* Server.py - Servidor propriamente dito.
+* Comentado.py - Codigo do servidor.py com comentários sobre o código.
+* index.html - Página de teste do servidor.
 
 ### COMO RODAR O SERVIDOR:
 
