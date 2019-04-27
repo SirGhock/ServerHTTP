@@ -11,7 +11,7 @@ Trabalho realizado na disciplina de Redes de Computadores
 
 É necessário estar conectado com algum tipo de internet.
 
-Para executar o programa é nescessário ter instalado em sua márina um compilador python em sua 3ª versão.
+Para executar o programa é nescessário ter instalado em sua máquina um compilador python em sua 3ª versão.
 
 Configurar o HOST e o PORT desejado no arquivo 'Server.py'.
 
